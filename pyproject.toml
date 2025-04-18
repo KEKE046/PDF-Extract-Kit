@@ -33,6 +33,6 @@ formula_detection = [
 ]
 # Add additional dependencies for other models
 
-[tool.setuptools]
-packages = ["pdf_extract_kit"]
-py-modules = []
+[tool.setuptools.packages.find]
+where   = ["."]
+include = ["pdf_extract_kit", "pdf_extract_kit.*"]
